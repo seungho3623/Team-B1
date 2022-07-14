@@ -48,6 +48,9 @@ int main() {
 				if ((start + i) > (col - 1)) { //비교하는 배열의 크기 이상일 경우 앞으로 돌아와서 탐색할 수 있도록 minus 사용
 					minus = col;
 				}
+				else{
+					minus = 0;
+				}
 				if (range[start][j] != range[start + i - minus][j]) {
 					count++;
 				}
